@@ -1,4 +1,33 @@
-venv/
+# Python
 __pycache__/
 *.pyc
-.env
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.env/
+
+# Data
+data/
+*.wav
+*.flac
+*.tar
+*.gz
+
+# Models
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
