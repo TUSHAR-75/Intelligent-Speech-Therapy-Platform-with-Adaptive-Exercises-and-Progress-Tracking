@@ -1,33 +1,51 @@
-# Python
+# ========== Python ==========
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.log
 
-# Virtual Environment
+# ========== Virtual Environment ==========
 venv/
 .env/
+.env.local/
 
-# Data
+# ========== Jupyter ==========
+.ipynb_checkpoints/
+
+# ========== Data & Audio ==========
 data/
 *.wav
 *.flac
-*.tar
-*.gz
+*.mp3
+*.ogg
 
-# Models
+# ========== Models & Caches ==========
+.cache/
+cache/
+models/
+checkpoints/
 *.pt
 *.pth
-*.ckpt
+*.bin
 *.onnx
 
-# Logs
-logs/
-*.log
+# ========== HuggingFace / Torch / Whisper ==========
+**/.cache/
+**/torch_cache/
+**/huggingface/
+**/whisper/
+**/whisperx/
 
-# OS
+# ========== Alignment Outputs ==========
+backend/alignment_outputs/
+
+# ========== OS / Editor ==========
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
 
-# VS Code
-.vscode/
+# ========== Temporary ==========
+temp/
+tmp/
