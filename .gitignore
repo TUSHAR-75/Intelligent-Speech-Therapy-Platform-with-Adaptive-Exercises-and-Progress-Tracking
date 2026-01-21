@@ -1,51 +1,42 @@
-# ========== Python ==========
+# ===== Python =====
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.log
 
-# ========== Virtual Environment ==========
+# ===== Virtual environment =====
 venv/
 .env/
-.env.local/
 
-# ========== Jupyter ==========
-.ipynb_checkpoints/
-
-# ========== Data & Audio ==========
+# ===== Data & Audio =====
 data/
-*.wav
-*.flac
-*.mp3
-*.ogg
+**/*.wav
+**/*.flac
+**/*.mp3
+**/*.m4a
 
-# ========== Models & Caches ==========
+# ===== Outputs =====
+alignment_outputs/
+outputs/
+results/
+
+# ===== Caches =====
 .cache/
-cache/
-models/
-checkpoints/
+.huggingface/
+torch_cache/
+**/.ipynb_checkpoints/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== VSCode =====
+.vscode/
+
+# ===== Large models =====
 *.pt
 *.pth
 *.bin
 *.onnx
-
-# ========== HuggingFace / Torch / Whisper ==========
-**/.cache/
-**/torch_cache/
-**/huggingface/
-**/whisper/
-**/whisperx/
-
-# ========== Alignment Outputs ==========
-backend/alignment_outputs/
-
-# ========== OS / Editor ==========
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-
-# ========== Temporary ==========
-temp/
-tmp/
